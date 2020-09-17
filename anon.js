@@ -3,7 +3,7 @@ let veg = ['pea', 'asparagus', 'carrot'];
 let cheese = ['cheddar', 'brie', 'colby'];
 
 function mid(s) {
-	return s[Math.floor(s.length/2)];
+	return s[0];
 }
 console.log(fruit.map(mid));
 
