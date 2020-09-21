@@ -2,10 +2,10 @@ let fruit = ['grape', 'plum', 'apricot'];
 let veg = ['pea', 'asparagus', 'carrot'];
 let cheese = ['cheddar', 'brie', 'colby'];
 
-function mid(s) {
+function init(s) {
 	return s[0];
 }
-console.log(fruit.map(mid));
+console.log(fruit.map(init));
 
 let f = fruit.map(x => x.length);
 console.log(f);
@@ -23,16 +23,9 @@ veg.sort(function(x, y) {
 });
 console.log(veg);
 
-let c = cheese.map(mid);
-c.sort((a, b) => {
-    if (a > b) {
-        return 1;
-    } else if (a < b) {
-        return -1;
-    } else {
-        return 0;
-    }
+cheese.sort((a, b) => {
+    return b.length - a.length;
 });
-console.log(c);
+console.log(cheese);
 
 
