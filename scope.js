@@ -11,11 +11,9 @@ function z(d) {
 function y(e) {
     if (e > 5) {
         let a = "big";
-        console.log(a);
     } else {
         let a = "small";
     }
-    console.log(a);
     return a;
 }
 
